@@ -20,31 +20,55 @@
 
     <!-- w3 CSS -->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-
     <script src="https://www.w3schools.com/lib/w3.js"></script>
 
 
 
 </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<body>
 
+    <div class="w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-left" style="width:200px" id="mySidebar">
+        <button class="w3-bar-item w3-button w3-large w3-hide-large" onclick="w3_close()">&times;</button>
+        <a href="./home.html" class="w3-bar-item w3-button">Home</a>
+        <a href="./bio.html" class="w3-bar-item w3-button w3-light-grey">Bio</a>
+        <a href="./photos.html" class="w3-bar-item w3-button">Photos</a>
+        <a href="./videos.html" class="w3-bar-item w3-button">Videos</a>
+    </div>
 
-
-    <div class=" w3-display-container w3-padding-64" id="bio">
-        <div class="w3-content">
-            <div class="w3-container">
-                <img src="../img/profile/sorala-profile-white.jpg" class="w3-cell w3-twothird" alt="me"></img>
-
-                <h1>Bio</h1>
-                <p>
-                    Depuis l'âge de 10 ans, Sora La écrit.<br>
-                    Quelques années plus tard, il apprend à jouer de la guitare puis commence en parallèle des études d'art dramatique au Conservatoire de Bruxelles.<br>
-                    Aujourd'hui, il sort son premier EP "Toutes ces voix", une fusion de musique pop et de slam. Un jeune talent bruxellois à découvrir absolument !<br>
-                </p>
-
+    <div class="w3-main" style="margin-left:200px;margin-right:50px;">
+        <button class="w3-button w3-white w3-xlarge w3-hide-large" onclick="w3_open()">&#9776;</button>
+        <div class="w3-container w3-padding-64" id="bio">
+            <div class="w3-content">
+                <div class="w3-cell-row">
+                    <div class="w3-cell w3-cell-middle w3-padding w3-hide-small" style="width:50%">
+                        <img src="../img/profile/sorala-profile-white.jpg" class="w3-border img-profile"></img>
+                    </div>
+                    <div class="w3-cell w3-cell-middle">
+                        <div class="w3-content w3-light-grey w3-border w3-padding">
+                            <h1>Bio</h1>
+                            <p>
+                                Depuis l'âge de 10 ans, <i>Sora La</i> écrit.<br>
+                                Quelques années plus tard, il apprend à jouer de la guitare puis commence en parallèle des études d'art dramatique au Conservatoire de Bruxelles.<br>
+                                Aujourd'hui, il sort son premier EP "Toutes ces voix", une fusion de musique pop et de slam. Un jeune talent bruxellois à découvrir absolument !<br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+
     </div>
+
+    <script>
+        function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+        }
+
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+        }
+    </script>
+
 
 </body>
