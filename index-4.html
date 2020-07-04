@@ -61,6 +61,7 @@
 
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
 
+    <button class="w3-button w3-white w3-xlarge w3-hide-large w3-top" onclick="w3_open()">&#9776;</button>
 
     <!-- Navbar -->
     <div class="navbar w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-left w3-cell" style="width:200px" id="mySidebar">
@@ -87,19 +88,20 @@
 
 
     <div class="w3-main" style="margin-left:200px;">
-        <button class="w3-button w3-white w3-xlarge w3-hide-large" onclick="w3_open()">&#9776;</button>
-
         <!-- Home -->
         <div class="w3-container w3-padding-64 w3-color-black" id="home" style="height:100vh">
             <div class="w3-cell-row">
-                <div class="w3-cell w3-cell-middle" style="width:80%">
+                <div class="w3-cell w3-cell-middle">
                     <img src="img/bg/tcv-red-square.jpg" class="w3-circle img-profile" style="height:inherit">
+                </div>
+                <div class="w3-cell w3-cell-middle" style="margin-left:0;">
+                    <img src="img/profile/sora.jpg" class="w3-circle" style="width:37vh">
                 </div>
             </div>
         </div>
 
         <!-- Bio -->
-        <div class="w3-container w3-padding-64" id="bio">
+        <div class="w3-container w3-padding-64" id="bio" style="min-height:100vh">
             <div class="w3-content">
                 <div class="w3-cell-row">
                     <div class="w3-cell w3-cell-middle w3-padding w3-hide-small" style="width:50%">
@@ -120,9 +122,9 @@
         </div>
 
         <!-- Photos -->
-        <div class="w3-container w3-padding-64" id="photos">
+        <div class="w3-container w3-padding-64" id="photos" style="min-height:100vh">
             <div class="w3-content">
-                <div class="w3-content w3-display-container w3-auto">
+                <div class="w3-content w3-display-container w3-auto" style="min-height:75vh">
                     <img class="mySlides img-profile w3-border" src="img/gallery/photo1.jpg">
                     <img class="mySlides img-profile w3-border" src="img/gallery/photo2.jpg">
                     <img class="mySlides img-profile w3-border" src="img/gallery/photo3.jpg">
@@ -150,9 +152,9 @@
 
 
         <!-- Photos -->
-        <div class="w3-container w3-padding-64" id="videos">
+        <div class="w3-container w3-padding-64" id="videos" style="min-height:100vh">
             <div class="w3-content">
-                <div class="w3-content w3-display-container w3-auto">
+                <div class="w3-content w3-display-container w3-auto" style="min-height:75vh">
                     <div class="mySlides2 embed-responsive embed-responsive-16by9">
                         <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/7TgdRQWhQ88?rel=0&controls=0&showinfo=0" allowfullscreen="allowfullscreen"></iframe>
                     </div>
@@ -183,7 +185,11 @@
 
     <script>
         function w3_open() {
-            document.getElementById("mySidebar").style.display = "block";
+            if (document.getElementById("mySidebar").style.display == "block") {
+                document.getElementById("mySidebar").style.display = "none";
+            } else {
+                document.getElementById("mySidebar").style.display = "block";
+            }
         }
 
         function w3_close() {
