@@ -85,3 +85,15 @@ p {
 a {
     text-decoration: none !important;
 }
+
+.div-transluscent
+{
+    color:#bbb;
+    background-color: rgba(0, 0, 0, 0.85);
+}
+
+.div-transluscent2
+{
+    color:#bbb;
+    background-color: rgba(0, 0, 0, 1);
+}
