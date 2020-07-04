@@ -22,142 +22,8 @@
 
 	<!-- Ensure Mobile Rendering -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<style>
-		body,
-		h1,
-		h2 {
-			font-family: "Georgia", Times, serif;
-			font-family: 'Montaga', serif;
-		}
+	<link rel="stylesheet" href="mycss.css">
 
-		body,
-		html {
-			height: 100%;
-		}
-
-		p {
-			line-height: 2;
-		}
-
-		.bgimg,
-		.bgimg2,
-		.bgimg3,
-		.bgimg4 {
-			min-height: 80%;
-			background-position: center center;
-			background-repeat: no-repeat;
-			background-attachment: fixed;
-			-webkit-background-size: cover;
-			-moz-background-size: cover;
-			-ms-background-size: cover;
-			background-size: cover;
-		}
-
-		@media screen and (max-width: 600px) {
-
-			.bgimg,
-			.bgimg2,
-			.bgimg3,
-			.bgimg4 {
-				min-height: 40%;
-			}
-		}
-
-		.video-container {
-			position: relative;
-			padding-bottom: 56.25%;
-			/* ratio 16/9 */
-			height: 0;
-			overflow: hidden;
-			clear: both;
-		}
-
-		.video-container embed,
-		.video-container iframe,
-		.video-container object {
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-		}
-
-		.bgimg {
-			min-height: 100%;
-			background-image: url("img/sora-la-bw.jpg");
-		}
-
-		.bgimg2 {
-			background-image: url("img/sora-la-magenta.jpg");
-		}
-
-		.bgimg3 {
-			background-image: url("img/sora-la-orange.jpg");
-		}
-
-		.bgimg4 {
-			background-image: url("img/sora-la-red.jpg");
-		}
-
-		i {
-			color: #d32b20;
-		}
-
-		/* Next & previous buttons */
-		.prev,
-		.next {
-			color: #d32b20 !important;
-			cursor: pointer;
-			position: absolute;
-			width: auto;
-			padding: 45px;
-			margin-top: -22px;
-			font-weight: regular;
-			font-size: 18px;
-			transition: 0.5s ease;
-			border-radius: 0 3px 3px 0;
-			user-select: none;
-		}
-
-		/* Position the "next button" to the right */
-		.next {
-			right: 0;
-			border-radius: 3px 0 0 3px;
-		}
-
-		/* On hover, add a black background color with a little bit see-through */
-		.prev:hover,
-		.next:hover {
-			color: white !important;
-			background-color: rgba(211, 43, 32, 0.3);
-		}
-
-		@media screen and (max-width: 600px) {
-			nav {
-				display: none !important;
-			}
-		}
-
-		.div-transluscent {
-			background-color: rgba(255, 255, 255, 0.8);
-			margin: 0 !important;
-		}
-
-		.container-fluid {
-			margin: 0 !important;
-
-		}
-
-		a:hover {
-			color: #d32b20 !important;
-		}
-
-
-		.img-fluid {
-			width: auto;
-			max-height: 500px;
-		}
-	</style>
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -197,7 +63,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="container col-md-6 col-lg-8 d-flex align-content-center flex-wrap">
-						<h1>
+						<h1 class="pt-5 pb-5">
 							<b style="color: #d32b20;">Bio</b>
 						</h1>
 						<p>
@@ -209,7 +75,7 @@
 						</p>
 					</div>
 					<div class="container col-md-6 col-lg-4 align-content-center flex-wrap">
-						<img src="img/sora.jpg" class="img-fluid rounded-circle" alt="me"></img>
+						<img src="img/profile/sora.jpg" class="img-fluid rounded-circle" alt="me"></img>
 					</div>
 				</div>
 			</div>
@@ -218,16 +84,23 @@
 
 
 	<!-- 2nd Background -->
-	<div class="bgimg2">
-		<div class="jumbotron jumbotron-fluid bg-transparent text-center text-white">
+	<!-- <div class="bgimg2">
+		<div class="jumbotron jumbotron-fluid bg-transparent m-0">
 			<h1></h1>
 		</div>
-	</div>
+	</div> -->
 
 
 	<!-- Gallery -->
 	<div class="bgimg2" style="min-height:10%" id="gallery">
 		<div class="container-fluid div-transluscent pt-5 pb-5">
+
+			<div class="container pt-5 pb-5">
+				<h1>
+					<b style="color: #d32b20;">Gallery</b>
+				</h1>
+			</div>
+
 			<div class="carousel slide" data-ride="carousel" id="photos">
 
 				<!-- Indicators -->
@@ -245,28 +118,28 @@
 				<!-- The slideshow -->
 				<div class="carousel-inner">
 					<div class="carousel-item active">
-						<img class="rounded img-fluid mx-auto d-block" src="img/photo1.jpg" alt="photo1">
+						<img class="rounded img-fluid mx-auto d-block" src="img/gallery/photo1.jpg" alt="photo1">
 					</div>
 					<div class="carousel-item">
-						<img class="rounded img-fluid mx-auto d-block" src="img/photo2.jpg" alt="photo2">
+						<img class="rounded img-fluid mx-auto d-block" src="img/gallery/photo2.jpg" alt="photo2">
 					</div>
 					<div class="carousel-item">
-						<img class="rounded img-fluid mx-auto d-block" src="img/photo3.jpg" alt="photo3">
+						<img class="rounded img-fluid mx-auto d-block" src="img/gallery/photo3.jpg" alt="photo3">
 					</div>
 					<div class="carousel-item">
-						<img class="rounded img-fluid mx-auto d-block" src="img/photo4.jpg" alt="photo4">
+						<img class="rounded img-fluid mx-auto d-block" src="img/gallery/photo4.jpg" alt="photo4">
 					</div>
 					<div class="carousel-item">
-						<img class="rounded img-fluid mx-auto d-block" src="img/photo5.jpg" alt="photo5">
+						<img class="rounded img-fluid mx-auto d-block" src="img/gallery/photo5.jpg" alt="photo5">
 					</div>
 					<div class="carousel-item">
-						<img class="rounded img-fluid mx-auto d-block" src="img/photo6.jpg" alt="photo6">
+						<img class="rounded img-fluid mx-auto d-block" src="img/gallery/photo6.jpg" alt="photo6">
 					</div>
 					<div class="carousel-item">
-						<img class="rounded img-fluid mx-auto d-block" src="img/photo7.jpg" alt="photo7">
+						<img class="rounded img-fluid mx-auto d-block" src="img/gallery/photo7.jpg" alt="photo7">
 					</div>
 					<div class="carousel-item">
-						<img class="rounded img-fluid mx-auto d-block" src="img/photo8.jpg" alt="photo8">
+						<img class="rounded img-fluid mx-auto d-block" src="img/gallery/photo8.jpg" alt="photo8">
 					</div>
 				</div>
 
@@ -280,28 +153,29 @@
 	</div>
 
 	<!-- 3rd Background -->
-	<div class="bgimg3">
-		<div class="jumbotron jumbotron-fluid bg-transparent text-center text-white">
+	<!-- <div class="bgimg3">
+		<div class="jumbotron jumbotron-fluid bg-transparent m-0">
 			<h1></h1>
 		</div>
-	</div>
+	</div> -->
 
 	<!-- Videos -->
 	<div class="bgimg3" style="min-height:10%;">
-		<div class="conainer-fluid div-transluscent pt-5 pb-5" id="videos">
+		<div class="container-fluid div-transluscent pt-5 pb-5" id="videos">
+			<div class="container pt-5 pb-5">
+				<h1>
+					<b style="color: #d32b20;">Videos</b>
+				</h1>
+			</div>
 			<div class="row">
 				<div class="col-md-6">
-					<div class="container">
-						<div class="embed-responsive embed-responsive-16by9">
-							<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/7TgdRQWhQ88?rel=0&controls=0&showinfo=0" allowfullscreen="allowfullscreen"></iframe>
-						</div>
+					<div class="embed-responsive embed-responsive-16by9 rounded img-fluid mx-auto d-block">
+						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/7TgdRQWhQ88?rel=0&controls=0&showinfo=0" allowfullscreen="allowfullscreen"></iframe>
 					</div>
 				</div>
 				<div class="col-md-6">
-					<div class="container">
-						<div class="embed-responsive embed-responsive-16by9">
-							<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/r3u-7N1jgYo?rel=0&controls=0&showinfo=0" allowfullscreen="allowfullscreen"></iframe>
-						</div>
+					<div class="embed-responsive embed-responsive-16by9 rounded img-fluid mx-auto d-block">
+						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/r3u-7N1jgYo?rel=0&controls=0&showinfo=0" allowfullscreen="allowfullscreen"></iframe>
 					</div>
 				</div>
 			</div>
@@ -309,11 +183,12 @@
 	</div>
 
 	<!-- 4th Background -->
-	<div class="bgimg4">
-		<div class="container-fluid bg-transparent text-center text-white">
+
+	<!-- <div class="bgimg4">
+		<div class="jumbotron jumbotron-fluid bg-transparent m-0">
 			<h1></h1>
 		</div>
-	</div>
+	</div> -->
 
 	<!-- Footer -->
 	<div class="bgimg4" style="min-height:10%;" id="footer">
