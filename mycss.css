@@ -17,7 +17,8 @@ p {
 .bgimg,
 .bgimg2,
 .bgimg3,
-.bgimg4 {
+.bgimg4,
+.bgtcv {
     min-height: 100%;
     background-position: center center;
     background-repeat: no-repeat;
@@ -47,6 +48,10 @@ p {
     height: 100%;
 }
 
+.bgtcv {
+    background-image: url("img/bg/tcv-red.jpg");
+}
+
 .bgimg {
     background-image: url("img/bg/bw.jpg");
 }
@@ -66,8 +71,17 @@ p {
 
 .img-profile {
     max-width: 100%;
-    margin:auto;
+    margin:auto !important;
     height: auto;
     width: auto;
     max-height: 80vh !important;
+}
+
+.img-cover {
+    width: 100% !important;
+    min-height: 100vh !important;
+}
+
+a {
+    text-decoration: none !important;
 }
