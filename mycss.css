@@ -76,6 +76,14 @@ p {
     max-height: 80vh !important;
 }
 
+.img-slideshow {
+    max-width: 100%;
+    margin: auto !important;
+    height: auto;
+    width: auto;
+    max-height: 70vh !important;
+}
+
 .img-cover {
     width: 100% !important;
     min-height: 100vh !important;
@@ -99,4 +107,24 @@ a {
     #main {
         margin-left: 200px;
     }
+}
+
+.carousel-indicators {
+    position:inherit;
+}
+
+.carousel-indicators li {
+    width:18px;
+    height:18px;
+    margin:4px;
+    border-radius: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+}
+
+.carousel-indicators li:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.bullets {
+
 }
