@@ -68,10 +68,9 @@ p {
     background-image: url("img/bg/red.jpg");
 }
 
-
 .img-profile {
     max-width: 100%;
-    margin:auto !important;
+    margin: auto !important;
     height: auto;
     width: auto;
     max-height: 80vh !important;
@@ -86,14 +85,18 @@ a {
     text-decoration: none !important;
 }
 
-.div-transluscent
-{
-    color:#bbb;
+.div-transluscent {
+    color: #bbb;
     background-color: rgba(0, 0, 0, 0.85);
 }
 
-.div-transluscent2
-{
-    color:#bbb;
+.div-transluscent2 {
+    color: #bbb;
     background-color: rgba(0, 0, 0, 1);
+}
+
+@media screen and (min-width: 993px) {
+    #main {
+        margin-left: 200px;
+    }
 }
