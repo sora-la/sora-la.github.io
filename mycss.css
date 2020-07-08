@@ -1,7 +1,7 @@
 body,
 h1,
 h2 {
-    font-family: "Georgia", Times, serif;
+    font-family: 'Cormorant Garamond', serif !important;
 }
 
 body,
@@ -12,6 +12,7 @@ html {
 
 p {
     line-height: 2;
+    font-size: 16px;
 }
 
 .bgimg,
@@ -76,12 +77,19 @@ p {
     max-height: 80vh !important;
 }
 
-.img-slideshow {
+.img-slideshow-old {
     max-width: 100%;
     margin: auto !important;
     height: auto;
     width: auto;
     max-height: 70vh !important;
+    object-fit: cover !important;
+}
+
+.img-slideshow {
+    height: 230px;
+    width: 230px;
+    object-fit: cover;
 }
 
 .img-cover {
@@ -127,4 +135,38 @@ a {
 
 .bullets {
 
+}
+
+.mySlides,
+.mySlides2 {
+    display: none;
+}
+
+.w3-badge,
+.w3-left,
+.w3-right {
+    cursor: pointer;
+}
+
+.w3-badge {
+    height: 16px;
+    width: 16px;
+    color: #aaaaaa !important;
+    padding: 0;
+}
+
+
+.navbar {
+    padding:0px !important;
+}
+
+.nav-link.active {
+    background-color: #eee;
+}
+
+.sl-border-left {
+    border-style: none none none solid;
+    border-width: 5px;
+    border-color: #d32b20;
+    padding-left: 5px;
 }
