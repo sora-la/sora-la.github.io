@@ -166,10 +166,9 @@ a {
 }
 
 .sl-border-left {
-    border-style: none none none solid;
+    /* border-left: solid;
     border-width: 5px;
-    border-color: #d32b20;
-    padding-left: 5px;
+    border-color: #d32b20; */
 }
 
 .fa-arrow-left, .fa-long-arrow-alt-left {
