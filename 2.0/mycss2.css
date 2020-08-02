@@ -1,0 +1,206 @@
+body,
+h1,
+h2 {
+    font-family: 'Cormorant Garamond', serif !important;
+    text-shadow: 1px 1px 2px #aaaaaa;
+}
+
+body,
+html {
+    height: 100%;
+    letter-spacing: 2px;
+}
+
+p {
+    line-height: 2;
+    font-size: 18px;
+}
+
+.bgimg,
+.bgimg2,
+.bgimg3,
+.bgimg4,
+.bgtcv {
+    min-height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    background-size: cover;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    /* ratio 16/9 */
+    height: 0;
+    overflow: hidden;
+    clear: both;
+}
+
+.video-container embed,
+.video-container iframe,
+.video-container object {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.bgtcv {
+    background-image: url("img/bg/tcv-red.jpg");
+}
+
+.bgimg {
+    background-image: url("img/bg/bw.jpg");
+}
+
+.bgimg2 {
+    background-image: url("img/bg/orange.jpg");
+}
+
+.bgimg3 {
+    background-image: url("img/bg/magenta.jpg");
+}
+
+.bgimg4 {
+    background-image: url("img/bg/red.jpg");
+}
+
+.img-profile {
+    max-width: 100%;
+    margin: auto !important;
+    height: auto;
+    width: auto;
+    max-height: 80vh !important;
+}
+
+.img-slideshow-old {
+    max-width: 100%;
+    margin: auto !important;
+    height: auto;
+    width: auto;
+    max-height: 70vh !important;
+    object-fit: cover !important;
+}
+
+.img-slideshow {
+    height: 230px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.img-cover {
+    width: 100% !important;
+    min-height: 100vh !important;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.div-transluscent {
+    color: #bbb;
+    background-color: rgba(0, 0, 0, 0.85);
+}
+
+.div-transluscent2 {
+    color: #222;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+@media screen and (min-width: 993px) {
+    #main {
+        margin-left: 200px;
+    }
+}
+
+.carousel-indicators {
+    position:inherit;
+}
+
+.carousel-indicators li {
+    width:18px;
+    height:18px;
+    margin:4px;
+    border-radius: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+}
+
+.carousel-indicators li:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.bullets {
+
+}
+
+.mySlides,
+.mySlides2 {
+    display: none;
+}
+
+.w3-badge,
+.w3-left,
+.w3-right {
+    cursor: pointer;
+}
+
+.w3-badge {
+    height: 16px;
+    width: 16px;
+    color: #aaaaaa !important;
+    padding: 0;
+}
+
+
+.navbar {
+    padding:0px !important;
+}
+
+.nav-link.active {
+    background-color: #eee;
+}
+
+.sl-border-left {
+    border-style: none none none solid;
+    border-width: 5px;
+    border-color: #d32b20;
+    padding-left: 5px;
+}
+
+.fa-arrow-left, .fa-long-arrow-alt-left {
+    position: absolute;
+    top:100px;
+    left:0px;
+    z-index: 1000;
+}
+
+.fa-arrow-right, .fa-long-arrow-alt-right {
+    position: absolute;
+    top:100px;
+    right:0px;
+    z-index: 1000;
+}
+
+body.modal-open {
+    overflow: visible;
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  max-width: 90%;
+  max-height: 90vh;
+  object-fit: contain;
+}
+
+a {
+    cursor:pointer;
+}
+
+.carousel-item {
+}
