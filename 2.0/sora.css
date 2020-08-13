@@ -117,7 +117,6 @@ main {
     width:300px;
     display:flex;
     justify-content: flex-start;
-    width: 22vw;
 }
 
 #fat-nav #social {
