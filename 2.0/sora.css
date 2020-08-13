@@ -39,6 +39,7 @@ button {
     background-color: inherit;
     border:none;
     outline-color: #d32b20;
+    align-self: flex-end;
 }
 
 button:hover {
