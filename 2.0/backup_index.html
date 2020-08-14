@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+
+<head>
+	<title>Sora La</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&display=swap" rel="stylesheet">
+	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- CSS -->
+	<link rel="stylesheet" href="sora.css" />
+	<!-- JS -->
+	<script type="text/javascript" src="sora.js"></script>
+
+	<!-- SPLIDE -->
+	<!-- SLIDER - Thanks to Splide -->
+	<script type="text/javascript" src="splide-2.4.10/dist/js/splide.min.js"></script>
+	<!-- Link to the file hosted on your server, -->
+	<link rel="stylesheet" href="splide-2.4.10/dist/css/splide.min.css">
+
+</head>
+
+<body>
+
+	<header id="fat-nav">
+		<a href="#home">
+			<img id="logo" src="img/FINAL_LOGO_SORA/PNG/FINAL_SoraLa__Logo_Rouge_FondBlanc.png" alt="logo">
+		</a>
+
+		<a href="javascript:void(0)" id="hamburger" onclick="openNav()">&#9776;</a>
+
+		<div id="curtain" class="overlay">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		</div>
+
+		<div class="links">
+			<a href="#home">Home</a>
+			<a href="#musique">Musique</a>
+			<a href="#photos">Photos</a>
+			<a href="#videos">Clips</a>
+			<a href="#contact">Contact</a>
+		</div>
+		<div id="social">
+			<a href="https://www.facebook.com/SoraLaMusic/">
+				<i class="fa fa-facebook-official"></i>
+			</a>
+			<a href="https://www.instagram.com/sooraala/">
+				<i class="fa fa-instagram"></i>
+			</a>
+			<a href="https://www.youtube.com/channel/UCK-sU_AudlX5zOBo3cfbweA">
+				<i class="fa fa-youtube"></i>
+			</a>
+			<a href="https://soundcloud.com/sora-la">
+				<i class="fab fa-soundcloud"></i>
+			</a>
+		</div>
+
+		<!-- MOBILE -->
+		<div id="myNav" class="overlay">
+			<div class="overlay-content">
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+				<!-- <a href="#home">
+					<img class="curtain-logo" src="img/FINAL_LOGO_SORA/PNG/FINAL_SoraLa__Logo_Rouge_FondBlanc.png" alt="logo">
+				</a> -->
+				<a href="#home" onclick="closeNav()">Home</a>
+				<a href="#musique" onclick="closeNav()">Musique</a>
+				<a href="#photos" onclick="closeNav()">Photos</a>
+				<a href="#videos" onclick="closeNav()">Clips</a>
+				<a href="#contact" onclick="closeNav()">Contact</a>
+				<div class"curtain-icons">
+					<a href="https://www.facebook.com/SoraLaMusic/">
+						<i class="fa fa-facebook-official"></i>
+					</a>
+					<a href="https://www.instagram.com/sooraala/">
+						<i class="fa fa-instagram"></i>
+					</a>
+					<a href="https://www.youtube.com/channel/UCK-sU_AudlX5zOBo3cfbweA">
+						<i class="fa fa-youtube"></i>
+					</a>
+					<a href="https://soundcloud.com/sora-la">
+						<i class="fab fa-soundcloud"></i>
+					</a>
+				</div>
+			</div>
+
+		</div>
+
+	</header>
+
+	<main class="bg-img">
+
+		<div id="home">
+			<div class="content">
+				<p id="bio">Depuis l'âge de 10 ans,
+					<i>Sora</i>
+					écrit.<br>
+					Quelques années plus tard, il apprend à jouer de la guitare puis commence en parallèle des études d'art dramatique au Conservatoire de Bruxelles.<br>
+					Aujourd'hui, il sort son premier EP "Toutes ces voix", une fusion de musique pop et de slam. Un jeune talent bruxellois à découvrir absolument !<br>
+				</p>
+				<img id="profile" src="img/Book_Sora_Studio_126.jpg" alt="Sora La profile">
+			</div>
+		</div>
+
+		<section id="musique">
+			<iframe class="content" width="100%" height="400" scrolling="no" frameborder="no"
+				src="https://w.soundcloud.com/player/?url=https://soundcloud.com/sora-la?fbclid=IwAR2oqHbL0w6avnyR0Gw2DWPIwopTS2JlzmAI9PsoYfYHxpqLSvWmrFfSp98&amp;auto_play=false&amp;buying=false&amp;liking=false&amp;download=false&amp;sharing=false&amp;show_artwork=true&amp;show_comments=false&amp;show_playcount=false&amp;show_user=false&amp;hide_related=false&amp;visual=false&amp;start_track=0&amp;callback=false"></iframe>
+		</section>
+
+		<section id="photos" class="splide">
+			<div class="splide__track">
+				<ul class="splide__list">
+					<img class="splide__slide" src="img/gallery/photo1.jpg">
+					<img class="splide__slide" src="img/gallery/photo2.jpg">
+					<img class="splide__slide" src="img/gallery/photo3.jpg">
+					<img class="splide__slide" src="img/gallery/photo4.jpg">
+					<img class="splide__slide" src="img/gallery/photo5.jpg">
+					<img class="splide__slide" src="img/gallery/photo6.jpg">
+					<img class="splide__slide" src="img/gallery/photo7.jpg">
+					<img class="splide__slide" src="img/gallery/photo8.jpg">
+				</ul>
+			</div>
+		</section>
+
+		<section id="videos">
+			<iframe src="https://www.youtube.com/embed/7TgdRQWhQ88?rel=0&controls=0&showinfo=0&list=PLr8S65FKjSsxX9hwG02cPqTsLxQsHczoG&index=0" allowfullscreen="allowfullscreen"></iframe>
+			<iframe src="https://www.youtube.com/embed/r3u-7N1jgYo?rel=0&controls=0&showinfo=0&list=PLr8S65FKjSsxX9hwG02cPqTsLxQsHczoG&index=2" allowfullscreen="allowfullscreen"></iframe>
+			<iframe src="https://www.youtube.com/embed/zDGyubybdV0?rel=0&controls=0&showinfo=0&list=PLr8S65FKjSsw40HkgvJ-cfnuwehZdYQa-&index=3" allowfullscreen="allowfullscreen"></iframe>
+			<iframe src="https://www.youtube.com/embed/I8fXp1cNbOk?rel=0&controls=0&showinfo=0&list=PLr8S65FKjSsxX9hwG02cPqTsLxQsHczoG&index=5" allowfullscreen="allowfullscreen"></iframe>
+		</section>
+
+		<section id="contact">
+			<form action="https://formspree.io/arthur.gossuin@gmail.com" method="POST">
+				<label for="">
+					email:
+				</label>
+				<input placeholder="votre adresse email" type="email" name="_replyto">
+				<br>
+				<label for="">
+					sujet:
+				</label>
+				<input placeholder="sujet du message" type="text" name="subject">
+				<br>
+				<label for="">
+					message:
+				</label>
+				<textarea placeholder="écrivez votre message..." name="name" rows="8" cols="80"></textarea>
+				<br>
+				<button type="submit" name="button" style="font-size: 18px;">
+					envoi &#x27A4;
+				</button>
+			</form>
+		</section>
+
+		<footer>
+
+		</footer>
+
+	</main>
+
+	<script type="text/javascript">
+		new Splide('.splide', {
+			type: 'loop',
+			height: '48vh',
+			autoWidth: true,
+			focus: 'center',
+			pagination: false,
+			gap: true
+		}).mount();
+
+		// MOBILE CURTAIN
+		function openNav() {
+			document.getElementById("myNav").style.height = "100%";
+		}
+
+		function closeNav() {
+			document.getElementById("myNav").style.height = "0%";
+		}
+	</script>
+</body>
