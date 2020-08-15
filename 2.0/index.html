@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<!-- CSS -->
-	<link rel="stylesheet" href="sora.css"/>
+	<link rel="stylesheet" href="sora.css" />
 	<!-- JS -->
 	<script type="text/javascript" src="sora.js"></script>
 
@@ -37,9 +37,9 @@
 
 		<div class="links">
 			<a href="#home">Home</a>
-			<a href="#musique">Musique</a>
 			<a href="#photos">Photos</a>
 			<a href="#videos">Clips</a>
+			<a href="#musique">Musique</a>
 			<a id="contactToggler" href="#">Contact</a>
 		</div>
 		<div id="social">
@@ -63,9 +63,9 @@
 				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 				<!-- <a href="#home"> <img class="curtain-logo" src="img/FINAL_LOGO_SORA/PNG/FINAL_SoraLa__Logo_Rouge_FondBlanc.png" alt="logo"> </a> -->
 				<a href="#home" onclick="closeNav()">Home</a>
-				<a href="#musique" onclick="closeNav()">Musique</a>
 				<a href="#photos" onclick="closeNav()">Photos</a>
 				<a href="#videos" onclick="closeNav()">Clips</a>
+				<a href="#musique" onclick="closeNav()">Musique</a>
 				<div class"curtain-icons"="class" curtain-icons""="curtain-icons" "">
 					<a href="https://www.facebook.com/SoraLaMusic/">
 						<i class="fa fa-facebook-official"></i>
@@ -100,15 +100,6 @@
 			</div>
 		</div>
 
-		<section id="musique">
-			<iframe
-				class="content"
-				width="100%"
-				height="400"
-				scrolling="no"
-				frameborder="no"
-				src="https://w.soundcloud.com/player/?url=https://soundcloud.com/sora-la?fbclid=IwAR2oqHbL0w6avnyR0Gw2DWPIwopTS2JlzmAI9PsoYfYHxpqLSvWmrFfSp98&amp;auto_play=false&amp;buying=false&amp;liking=false&amp;download=false&amp;sharing=false&amp;show_artwork=true&amp;show_comments=false&amp;show_playcount=false&amp;show_user=false&amp;hide_related=false&amp;visual=false&amp;start_track=0&amp;callback=false"></iframe>
-		</section>
 
 		<section id="photos" class="splide">
 			<div class="splide__track">
@@ -127,22 +118,27 @@
 
 		<section id="videos">
 			<iframe src="https://www.youtube.com/embed/7TgdRQWhQ88?rel=0&controls=0&showinfo=0&list=PLr8S65FKjSsxX9hwG02cPqTsLxQsHczoG&index=0" allowfullscreen="allowfullscreen"></iframe>
+			<iframe src="https://www.youtube.com/embed/I8fXp1cNbOk?rel=0&controls=0&showinfo=0&list=PLr8S65FKjSsxX9hwG02cPqTsLxQsHczoG&index=5" allowfullscreen="allowfullscreen"></iframe>
 			<iframe src="https://www.youtube.com/embed/r3u-7N1jgYo?rel=0&controls=0&showinfo=0&list=PLr8S65FKjSsxX9hwG02cPqTsLxQsHczoG&index=2" allowfullscreen="allowfullscreen"></iframe>
 			<iframe src="https://www.youtube.com/embed/zDGyubybdV0?rel=0&controls=0&showinfo=0&list=PLr8S65FKjSsw40HkgvJ-cfnuwehZdYQa-&index=3" allowfullscreen="allowfullscreen"></iframe>
-			<iframe src="https://www.youtube.com/embed/I8fXp1cNbOk?rel=0&controls=0&showinfo=0&list=PLr8S65FKjSsxX9hwG02cPqTsLxQsHczoG&index=5" allowfullscreen="allowfullscreen"></iframe>
+		</section>
+
+		<section id="musique">
+			<iframe class="content" width="100%" height="400" scrolling="no" frameborder="no"
+				src="https://w.soundcloud.com/player/?url=https://soundcloud.com/sora-la?fbclid=IwAR2oqHbL0w6avnyR0Gw2DWPIwopTS2JlzmAI9PsoYfYHxpqLSvWmrFfSp98&amp;auto_play=false&amp;buying=false&amp;liking=false&amp;download=false&amp;sharing=false&amp;show_artwork=true&amp;show_comments=false&amp;show_playcount=false&amp;show_user=false&amp;hide_related=false&amp;visual=false&amp;start_track=0&amp;callback=false"></iframe>
 		</section>
 
 		<div id="contact">
 			<div class="modal-content">
 				<span class="close">&times;</span>
 				<form action="https://formspree.io/xnqgroby" method="POST">
-					<label for="">email:</label>
+					<label for="">Email:</label>
 					<input placeholder="votre adresse email" type="email" name="_replyto">
 					<br>
-					<label for="">sujet:</label>
+					<label for="">Sujet:</label>
 					<input placeholder="sujet du message" type="text" name="subject">
 					<br>
-					<label for="">message:</label>
+					<label for="">Message:</label>
 					<textarea placeholder="écrivez votre message..." name="name" rows="8" cols="80"></textarea>
 					<br>
 					<button type="submit" name="button" style="font-size: 18px;">
@@ -180,15 +176,15 @@
 		var btn = document.getElementById("contactToggler");
 		var span = document.getElementsByClassName("close")[0];
 
-		btn.onclick = function () {
+		btn.onclick = function() {
 			modal.style.display = "block";
 		}
 
-		span.onclick = function () {
+		span.onclick = function() {
 			modal.style.display = "none";
 		}
 
-		window.onclick = function (event) {
+		window.onclick = function(event) {
 			if (event.target == modal) {
 				modal.style.display = "none";
 			}

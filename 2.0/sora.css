@@ -8,7 +8,7 @@ body {
 
 p {
     padding:18px;
-    font-size: 18px;
+    font-size: 16px;
     letter-spacing: 1px;
     line-height: 1.8;
 }
@@ -71,8 +71,8 @@ a, button {
 section {
     padding:80px 0px 80px 0px;
     margin:auto;
-    width:100%; /* was 94vw */
-    background-color: rgba(0,0,0,0.5); /* was white */
+    width:94vw; /* was 94vw */
+    background-color: white;
 }
 
 main {
@@ -91,7 +91,7 @@ main {
     -moz-background-size: cover;
     -ms-background-size: cover;
     background-size: cover;
-    background-image: url("img/wave-red-dark-oil10.jpg");
+    background-image: url("img/paint_sora_la.jpg");
 }
 
 /*
