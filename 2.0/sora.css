@@ -279,7 +279,7 @@ main {
     margin:180px 0px 80px 0px;
     display:grid;
     grid-template-columns:48vmin 48vmin;
-    background-color: white;
+    background-color: #e9e5e2;
 }
 
 #bio {
