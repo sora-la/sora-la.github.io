@@ -1,0 +1,391 @@
+body {
+    margin:0;
+    font-family: 'Cormorant Garamond', serif;
+    text-shadow: 1px 1px 2px #aaaaaa;
+    color:#222222;
+    text-align:justify;
+}
+
+p {
+    padding:18px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 1.8;
+}
+
+input, textarea {
+    font: inherit;
+    resize: none;
+    outline-color: #d32b20;
+    border: none;
+    box-shadow: 1px 1px 3px #aaa;
+    padding:8px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+label {
+    padding: 8px;
+}
+
+button {
+    color:inherit;
+    font: inherit;
+    text-shadow:inherit;
+    background-color: inherit;
+    border:none;
+    outline-color: #d32b20;
+    align-self: flex-end;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+@media (max-width:800px) {
+    p{
+        font-size: 14px;
+    }
+}
+
+@media (max-width:500px) {
+    p{
+        padding:6px;
+        font-size: 12px;
+        letter-spacing: 1px;
+        line-height: 1.2;
+    }
+}
+
+a, button {
+    text-decoration: inherit;
+    color:inherit;
+}
+
+
+
+section {
+    padding:80px 0px 80px 0px;
+    margin:auto;
+    width:94vw; /* was 94vw */
+    background-color: white;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.bg-img {
+    min-height: 100%;
+    background-color: black;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    background-size: cover;
+    background-image: url("img/paint_sora_la.jpg");
+}
+
+/*
+** DEBUG
+*/
+.red {
+    background-color: red;
+}
+.yel {
+    background-color: yellow;
+}
+.blu {
+    background-color: blue;
+}
+
+/*
+** NAVIGATION
+*/
+
+#fat-nav {
+    position: fixed;
+    width:100%;
+    transition: 0.4s;
+    background-color:white;
+    top:0;
+    z-index:3;
+    box-shadow: 0px 0px 8px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 24px;
+}
+
+#fat-nav #hamburger {
+    display: none;
+}
+
+#fat-nav .links {
+    color:#222222;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 56vw;
+}
+
+#fat-nav .links a {
+    padding:5px;
+    border-bottom: 3px solid transparent;
+}
+
+#fat-nav .links a:hover {
+    padding:5px;
+    border-bottom: 3px solid #d32b20;
+}
+
+#fat-nav #logo {
+    transition:0.5s;
+    width:300px;
+    display:flex;
+    justify-content: flex-start;
+}
+
+#fat-nav #social {
+    transition:0.5s;
+    width:20%;
+    max-width:300px;
+    display:flex;
+    justify-content: space-evenly;
+    width: 22vw;
+}
+
+#fat-nav #curtain {
+    display:none;
+}
+
+/*
+** CURTAIN
+*/
+
+.overlay {
+    display: none;
+}
+
+@media (max-width:800px) {
+    #fat-nav {
+        justify-content: space-between;
+    }
+    #fat-nav #hamburger {
+        display: flex;
+        font-size: 32px;
+        padding: 8px;
+        text-align: right;
+    }
+    #fat-nav #logo {
+        align-self: flex-start;
+    }
+    #fat-nav .links {
+        display:none;
+    }
+    #fat-nav #social {
+        display:none;
+    }
+    .curtain-icons {
+        display: flex;
+        color: green;
+        flex-direction: row !important;
+    }
+    .curtain-logo {
+        align-self: center;
+        width:100vmin;
+    }
+
+    /* The Overlay (background) */
+    .overlay {
+      /* Height & width depends on how you want to reveal the overlay (see JS below) */
+      display: block;
+      height: 0;
+      width: 100%;
+      position: fixed; /* Stay in place */
+      z-index: 100; /* Sit on top */
+      left: 0;
+      top: 0;
+      background-color: rgb(255,255,255); /* Black fallback color */
+      background-color: rgba(255,255,255, 0.9); /* Black w/opacity */
+      overflow-x: hidden; /* Disable horizontal scroll */
+      transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+    }
+
+    /* Position the content inside the overlay */
+    .overlay-content {
+      position: relative;
+      top: 20%;
+      width: 100%; /* 100% width */
+      text-align: center; /* Centered text/links */
+      margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+    }
+
+    /* The navigation links inside the overlay */
+    .overlay a {
+      padding: 8px;
+      text-decoration: none;
+      font-size: 36px;
+      color: #222222;
+      display: block; /* Display block instead of inline */
+      transition: 0.3s; /* Transition effects on hover (color) */
+    }
+
+    /* When you mouse over the navigation links, change their color */
+    .overlay a:hover, .overlay a:focus {
+      color: #f1f1f1;
+    }
+
+    /* Position the close button (top right corner) */
+    .overlay .closebtn {
+      position: absolute;
+      top: -20%;
+      right: 20px;
+      font-size: 60px;
+    }
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+
+/*
+** HOME
+*/
+
+#home {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+}
+
+#home .content {
+    margin:180px 0px 80px 0px;
+    display:grid;
+    grid-template-columns:48vmin 48vmin;
+    background-color: #e9e5e2;
+}
+
+#bio {
+    align-self: center;
+    padding: 32px;
+}
+
+@media screen and (max-width: 800px) {
+    #bio {
+        padding: 16px;
+        overflow: scroll;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    #bio {
+        padding: 8px;
+        overflow: scroll;
+    }
+}
+
+#profile {
+    width:100%;
+    align-self: center;
+}
+
+
+/*
+** PHOTOS
+*/
+
+#photos {
+
+}
+
+/*
+** VIDEOS
+*/
+
+#videos {
+    display:flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+#videos iframe {
+    border: none;
+    margin-bottom:64px;
+    width:500px;
+    height:300px;
+}
+
+/*
+** MUSIC
+*/
+
+#musique {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+#musique .content {
+    width:96vmin;
+}
+
+/*
+** CONTACT
+*/
+
+/* The Modal (background) */
+#contact {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 100; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 10% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 100vmin; /* Could be more or less, depending on screen size */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* The Close Button */
+.close {
+  align-self: flex-end;
+  color: #aaa;
+  float: right;
+  font-size: 48px;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
